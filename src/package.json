@@ -5,10 +5,12 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test-lint": "eslint .",
+    "lint": "eslint .",
     "test-unit": "jest --ci tests/unit --coverage --forceExit",
     "test-integration": "jest --ci tests/integration --coverage --forceExit",
-    "test-e2e": "npx playwright test"
+    "test-e2e": "npx playwright test",
+    "test:coverage": "jest --coverage",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",

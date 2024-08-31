@@ -16,7 +16,7 @@ app.get('/', async (req, res) => {
   res.render('index', { notes: notes });
 });
 
-mongoose.connect(process.env.SERVER || 'mongodb://localhost:27017', {
+mongoose.connect(process.env.SERVER, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
