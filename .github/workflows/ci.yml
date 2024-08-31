@@ -34,9 +34,6 @@ jobs:
     - name: Check Code Coverage
       run: npm run test:coverage
 
-    - name: Generate Artifact
-      if: success()
-      run: npm run build
 
     - name: Upload artifact
       uses: actions/upload-artifact@v3

@@ -43,10 +43,10 @@ To run the pipeline, use the following commands:
 
 ## Expected Output
 
-Static Code Analysis / Lint: The linter will check the code for any stylistic or programming errors.
+Static Code Analysis / Lint: The linter will check the code for any programming and stylisticerrors.
 
-Unit Testing: All unit tests will be executed, and the results will be displayed.
+Unit Testing: All unit tests will be executed and the results will be displayed.
 
-Code Coverage: A report will be generated showing the percentage of code covered by tests.
+Code Coverage: A report will be generated to show the percentage of code covered by tests.
 
-Artifact Generation: A deployable artifact will be created if all tests pass.
+Artifact Generation: If all tests pass, a deployable artifact will be created.
