@@ -8,7 +8,7 @@ describe('Add Note', () => {
     it('Should add a new note and redirect to login', async () => {
 
         const res = await req
-            .post('/new')
+            .post('/')
             .send({
                 title: "[INTEGRATION TEST] New Note",
                 description: "This note was created at " + new Date(),
