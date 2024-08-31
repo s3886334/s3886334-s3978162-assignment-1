@@ -25,11 +25,11 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run Linter
+    - name: Lint code
       run: npm run lint
 
     - name: Run Unit Tests
-      run: npm test-unit
+      run: npm test
 
     - name: Check Code Coverage
       run: npm run coverage
@@ -37,3 +37,9 @@ jobs:
     - name: Generate Artifact
       if: success()
       run: npm run build
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: application-build  # Name of the artifact
+        path: build/
