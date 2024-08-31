@@ -4,10 +4,9 @@ const app = express();
 const Note = require('./models/note');
 const notesRouter = require('./routes/notes');
 const methodOverride = require('method-override');
-const ejs = require('ejs');
 require('dotenv').config();
 
-app.set('view engine', ejs);
+app.set('view engine', 'ejs');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));

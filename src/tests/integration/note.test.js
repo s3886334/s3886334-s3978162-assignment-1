@@ -8,7 +8,7 @@ describe('Add Note', () => {
     it('Should add a new note and redirect to login', async () => {
 
         const res = await req
-            .post('/')
+            .post('/new')
             .send({
                 title: "[INTEGRATION TEST] New Note",
                 description: "This note was created at " + new Date(),
@@ -16,5 +16,5 @@ describe('Add Note', () => {
 
         expect(res.statusCode).toEqual(302)
         expect(res.headers['location']).toEqual('/')
-    }, 20000);
+    });
 })
