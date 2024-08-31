@@ -12,6 +12,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    services:
+      mongodb:
+        image: mongo:latest
+        ports:
+          - 27017:27017
 
     steps:
     - name: Checkout code
@@ -21,6 +26,9 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '17.6.0'
+
+    - name: MongoDB Action
+      uses: SusanDoggie/mongodb-action@0.0.1
 
     - name: Install dependencies
       run: npm install
