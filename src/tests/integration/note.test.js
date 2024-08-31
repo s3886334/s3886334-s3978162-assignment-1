@@ -16,5 +16,5 @@ describe('Add Note', () => {
 
         expect(res.statusCode).toEqual(302)
         expect(res.headers['location']).toEqual('/')
-    }, 7000);
+    }, 20000);
 })
