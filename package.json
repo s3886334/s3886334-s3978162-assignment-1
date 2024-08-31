@@ -10,7 +10,7 @@
     "test-integration": "jest --ci tests/integration --coverage --forceExit",
     "test-e2e": "npx playwright test",
     "coverage": "jest --coverage",
-    "test": "jest --coverage"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
