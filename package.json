@@ -9,7 +9,8 @@
     "test-unit": "jest --ci tests/unit --coverage --forceExit",
     "test-integration": "jest --ci tests/integration --coverage --forceExit",
     "test-e2e": "npx playwright test",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
